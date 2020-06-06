@@ -1,3 +1,4 @@
+// A React Class component
 import React, { Component } from "react";
 
 class Welcome extends Component {
