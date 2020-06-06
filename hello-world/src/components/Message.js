@@ -12,17 +12,26 @@ class Message extends Component {
   render() {
     return (
       <div>
-        <h1>{(this.state.message, this.test)}</h1>
-        <button onClick={() => this.onSubscribe()}>Sunbcribe</button>
+        <h1>{this.state.message + this.test}</h1>
+        <button onClick={() => this.onSubscribe()}>Subscribe</button>
       </div>
     );
   }
 
   onSubscribe() {
-    this.setState({
-      message: "Subscribed",
-    });
+    this.setState(
+      {
+        message: "Subscribed",
+      },
+      () => {
+        console.log(
+          "Value changed to message " + this.state.message + "test " + this.test
+        );
+      }
+    );
     this.test = 30;
+    this.state.message = "Amit";
+    console.log(this.state.message + this.test);
   }
 }
 
