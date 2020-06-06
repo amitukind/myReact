@@ -7,12 +7,13 @@ class Message extends Component {
     this.state = {
       message: "Welcome",
     };
+    this.test = 20;
   }
   render() {
     return (
       <div>
-        <h1>{this.state.message}</h1>
-        <button onClick={() => this.onSubscribe()}>Sunscribe</button>
+        <h1>{(this.state.message, this.test)}</h1>
+        <button onClick={() => this.onSubscribe()}>Sunbcribe</button>
       </div>
     );
   }
@@ -21,6 +22,7 @@ class Message extends Component {
     this.setState({
       message: "Subscribed",
     });
+    this.test = 30;
   }
 }
 
