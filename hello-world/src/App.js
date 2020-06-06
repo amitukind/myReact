@@ -4,6 +4,8 @@ import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import JSXHello from "./components/JSXHello";
 import Message from "./components/Message";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
 
 class App extends Component {
   render() {
@@ -13,6 +15,8 @@ class App extends Component {
         <Welcome celeb="SRK" />
         <JSXHello />
         <Message />
+        <FunctionClick />
+        <ClassClick />
       </div>
     );
   }
