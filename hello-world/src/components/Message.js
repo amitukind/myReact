@@ -29,9 +29,9 @@ class Message extends Component {
         );
       }
     );
-    this.test = 30;
-    this.state.message = "Amit";
-    console.log(this.state.message + this.test);
+    this.test = 30; //will be only reflected on setState call so always use with that
+    //this.state.message = "Amit";  Not Recommended as React will not get its information about update always use setState
+    //console.log(this.state.message + this.test);
   }
 }
 
