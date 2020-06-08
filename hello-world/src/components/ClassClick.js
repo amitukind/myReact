@@ -7,6 +7,7 @@ class ClassClick extends Component {
   clickedClass() {
     console.log("Class Clicked");
   }
+  componentDidMount() {}
 }
 
 export default ClassClick;

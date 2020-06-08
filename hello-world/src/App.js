@@ -8,6 +8,7 @@ import FunctionClick from "./components/FunctionClick";
 import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import NameList from "./components/NameList";
+import LifecycleA from "./components/LifecycleA";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <ClassClick />
         <EventBind />
         <NameList></NameList>
+        <LifecycleA />
       </div>
     );
   }
