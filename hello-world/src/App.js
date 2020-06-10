@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./App.css";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
@@ -9,6 +9,7 @@ import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import NameList from "./components/NameList";
 import LifecycleA from "./components/LifecycleA";
+import FragmentDemo from "./components/FragmentDemo";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <EventBind />
         <NameList></NameList>
         <LifecycleA />
+        <FragmentDemo />
       </div>
     );
   }
