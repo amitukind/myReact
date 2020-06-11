@@ -10,12 +10,13 @@ import EventBind from "./components/EventBind";
 import NameList from "./components/NameList";
 import LifecycleA from "./components/LifecycleA";
 import FragmentDemo from "./components/FragmentDemo";
+import RefsDemo from "./components/RefsDemo";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greet nickname="Verma" />
+        {/* <Greet nickname="Verma" />
         <Welcome celeb="SRK" />
         <JSXHello />
         <Message />
@@ -24,7 +25,8 @@ class App extends Component {
         <EventBind />
         <NameList></NameList>
         <LifecycleA />
-        <FragmentDemo />
+        <FragmentDemo /> */}
+        <RefsDemo />
       </div>
     );
   }
