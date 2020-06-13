@@ -12,6 +12,7 @@ import LifecycleA from "./components/LifecycleA";
 import FragmentDemo from "./components/FragmentDemo";
 import RefsDemo from "./components/RefsDemo";
 import HookCounter from "./components/HookCounter";
+import HookCounter2 from "./components/HookCounter2";
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
         <FragmentDemo />
         <RefsDemo />
         <HookCounter></HookCounter>
+        <HookCounter2></HookCounter2>
       </div>
     );
   }
