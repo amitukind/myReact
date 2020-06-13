@@ -7,12 +7,12 @@ function HookCounterObject() {
       <input
         type="text"
         value={name.firstName}
-        onChange={(e) => setName({ firstName: e.target.value })}
+        onChange={(e) => setName({ ...name, firstName: e.target.value })}
       />
       <input
         type="text"
         value={name.lastName}
-        onChange={(e) => setName({ lastName: e.target.value })}
+        onChange={(e) => setName({ ...name, lastName: e.target.value })}
       />
       <h2>{JSON.stringify(name)}</h2>
     </form>
