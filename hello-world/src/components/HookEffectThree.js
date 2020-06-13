@@ -7,6 +7,7 @@ function HookEffectThree() {
   useEffect(() => {
     document.title = "Counter " + counter;
     console.log("Setting Counter");
+    // You can alro return a function that will be run on unmount as a cleanup example return ()=>{some code}
   }, [counter]); // Second parameter is an array of variables that needs to be checked for change before executing Effect Hook
 
   return (
