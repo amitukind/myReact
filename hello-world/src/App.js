@@ -13,6 +13,7 @@ import FragmentDemo from "./components/FragmentDemo";
 import RefsDemo from "./components/RefsDemo";
 import HookCounter from "./components/HookCounter";
 import HookCounter2 from "./components/HookCounter2";
+import HookCounterObject from "./components/HookCounterObject";
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
         <RefsDemo />
         <HookCounter></HookCounter>
         <HookCounter2></HookCounter2>
+        <HookCounterObject></HookCounterObject>
       </div>
     );
   }
