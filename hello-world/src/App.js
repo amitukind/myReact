@@ -15,6 +15,7 @@ import HookCounter from "./components/HookCounter";
 import HookCounter2 from "./components/HookCounter2";
 import HookCounterObject from "./components/HookCounterObject";
 import HookEffectThree from "./components/HookEffectThree";
+import CounterMemo from "./components/CounterMemo";
 
 class App extends Component {
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
         <HookCounter2></HookCounter2>
         <HookCounterObject />
         <HookEffectThree />
+        <CounterMemo />
       </div>
     );
   }
