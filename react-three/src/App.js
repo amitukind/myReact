@@ -4,12 +4,12 @@ import { Canvas } from "react-three-fiber";
 import Sphere from "./Sphere";
 import Light from "./Light";
 import { RGBAFormat } from "three";
+import Cubes from "./Cubes";
 
 function App() {
   return (
     <Canvas>
-      <Light brightness={10} color={"pink"} />
-      <Sphere></Sphere>
+      <Cubes></Cubes>
     </Canvas>
   );
 }
