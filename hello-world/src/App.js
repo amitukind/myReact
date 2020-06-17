@@ -17,6 +17,7 @@ import HookCounterObject from "./components/HookCounterObject";
 import HookEffectThree from "./components/HookEffectThree";
 import CounterMemo from "./components/CounterMemo";
 import FocusInputUseRef from "./components/FocusInputUseRef";
+import HooksTimer from "./components/HooksTimer";
 
 class App extends Component {
   render() {
@@ -39,6 +40,7 @@ class App extends Component {
         <HookEffectThree />
         <CounterMemo />
         <FocusInputUseRef />
+        <HooksTimer />
       </div>
     );
   }
