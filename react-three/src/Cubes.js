@@ -3,12 +3,13 @@ import { useFrame } from "react-three-fiber";
 
 const Cubes = () => {
   const cubesArr = ["a", "b", "c"];
-  const cubesRefs = cubesArr.map(() => useRef());
+  const cubesRefs = useRef([]);
 
-  const cubeMeshes = cubesRefs.map((ref) => ref.current);
-  cubeMeshes = cubesArr.map(() => {
+  const cubeMeshes = cubesArr.map((name, i) => {
     return (
       <mesh
+        key={name}
+        ref={(mesh) => (cubesRefs.current[i] = mesh)}
         position={[Math.random() * 2, Math.random() * 2, Math.random() * 2]}
       >
         <boxBufferGeometry
@@ -32,12 +33,12 @@ const Cubes = () => {
   });
 
   useFrame(() => {
-    // cubesMeshes.forEach(function (value) {
-    //   value.rotation.y += 0.1;
+    // cubesRefs.current.forEach(function (mesh) {
+    //   if (mesh) mesh.rotation.y += 0.1;
     // });
   });
 
-  return <group position={[0, 0, 0]}>{cubeMeshes.current}</group>;
+  return <group position={[0, 0, 0]}>{cubeMeshes}</group>;
 };
 
 export default Cubes;
