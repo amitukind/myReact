@@ -212,7 +212,13 @@ What that involved:
 - **Pinned patched versions** via the `resolutions` field in each
   `package.json` for transitives that upstream packages still pin to vulnerable
   ranges: `postcss`, `nth-check`, `serialize-javascript`, `svgo`, `underscore`,
-  `uuid`, `@tootallnate/once`, and `webpack-dev-server` 5.
+  `uuid`, `qs`, `fast-uri`, `colord`, `@tootallnate/once`, and
+  `webpack-dev-server` 5.
+- **Testing Library upgrade** (September 2026) — `@testing-library/jest-dom`
+  4 → 6.9 (drops the `css` → `source-map-resolve` → `decode-uri-component`
+  chain), `@testing-library/react` 9 → 12 (the last line supporting React 16)
+  and `@testing-library/user-event` 7 → 13. `jest-dom` is held at `~6.9` because
+  6.10+ requires `@testing-library/dom` 10 and Node 22, which RTL 12 can't use.
 - **`patch-package`** — `react-scripts` 5.0.1 predates webpack-dev-server 5, so
   a small patch in each project's [`patches/`](hello-world/patches/) directory
   migrates its dev-server config (`https` → `server`,

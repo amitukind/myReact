@@ -7,11 +7,12 @@ function HooksTimer() {
     intervalRef.current = setInterval(() => {
       setTimer((pervTimer) => pervTimer + 1);
     }, 1000);
+    return () => clearInterval(intervalRef.current);
   }, []);
   return (
     <div>
       Hook Timer - {timer}
-      <button onClick={clearInterval(intervalRef.current)}>
+      <button onClick={() => clearInterval(intervalRef.current)}>
         Clear Hook Timer
       </button>
     </div>
